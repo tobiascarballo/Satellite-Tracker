@@ -1,0 +1,68 @@
+import { SatelliteRecord } from '../../types';
+
+export const DEFAULT_SATELLITES: SatelliteRecord[] = [
+  {
+    noradId: 25544,
+    name: 'ISS (ZARYA)',
+    line1: '1 25544U 98067A   24080.52847222  .00014856  00000-0  26857-3 0  9993',
+    line2: '2 25544  51.6416 254.9125 0004562 301.7694  58.3306 15.49842448444453',
+    category: 'station',
+    lastUpdated: Date.now(),
+  },
+  {
+    noradId: 48274,
+    name: 'TIANGONG (CSS)',
+    line1: '1 48274U 21035A   24080.51859876  .00021679  00000-0  23618-3 0  9999',
+    line2: '2 48274  41.4727 151.7891 0005471  89.4718 270.6775 15.60251104165243',
+    category: 'station',
+    lastUpdated: Date.now(),
+  },
+  {
+    noradId: 20580,
+    name: 'HUBBLE SPACE TELESCOPE',
+    line1: '1 20580U 90037B   24080.49576389  .00001243  00000-0  57682-4 0  9998',
+    line2: '2 20580  28.4697 103.8821 0002772 314.9312  45.1098 15.09312012864531',
+    category: 'other',
+    lastUpdated: Date.now(),
+  },
+  {
+    noradId: 25338,
+    name: 'NOAA 15',
+    line1: '1 25338U 98030A   24080.48512731  .00000096  00000-0  65412-4 0  9991',
+    line2: '2 25338  98.7073 135.5392 0011492  72.9365 287.3204 14.25950854341258',
+    category: 'weather',
+    lastUpdated: Date.now(),
+  },
+  {
+    noradId: 44713,
+    name: 'STARLINK-1007',
+    line1: '1 44713U 19074A   24080.50000000  .00001423  00000-0  10452-3 0  9994',
+    line2: '2 44713  53.0537  42.3142 0001423  88.1245 271.9934 15.06385732238411',
+    category: 'starlink',
+    lastUpdated: Date.now(),
+  },
+  {
+    noradId: 44714,
+    name: 'STARLINK-1008',
+    line1: '1 44714U 19074B   24080.50000000  .00001511  00000-0  11012-3 0  9992',
+    line2: '2 44714  53.0534  42.5021 0001411  89.5412 270.5891 15.06385102238428',
+    category: 'starlink',
+    lastUpdated: Date.now(),
+  },
+  {
+    noradId: 44715,
+    name: 'STARLINK-1009',
+    line1: '1 44715U 19074C   24080.50000000  .00001488  00000-0  10842-3 0  9990',
+    line2: '2 44715  53.0532  42.6901 0001432  90.9521 269.1782 15.06384912238435',
+    category: 'starlink',
+    lastUpdated: Date.now(),
+  },
+  {
+    noradId: 24876,
+    name: 'NAVSTAR 43 (USA 132)',
+    line1: '1 24876U 97035A   24080.49012311 -.00000054  00000-0  00000-0 0  9995',
+    line2: '2 24876  55.4312 120.4561 0124871 210.1241 148.9812  2.00561234195123',
+    category: 'gps',
+    lastUpdated: Date.now(),
+  },
+];
